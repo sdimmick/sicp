@@ -1,0 +1,6 @@
+(define (a-plus-abs-b a b))
+  ((if (> b 0) + -) a b)
+
+We want to add the absolute value of b to a. If b is positive, we simply evaluate
+the expression a + b. If b is negative, we instead subtract b from a, which
+negates the already negated b and achieves the desired result.
